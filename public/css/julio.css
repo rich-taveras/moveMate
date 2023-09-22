@@ -1,0 +1,34 @@
+img{
+    width: 100%;
+    height: 100%;
+}
+a{
+    color: red;
+}
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    top: 0;
+    left: 0;
+z-index: -1;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+.custom-container-text{
+    padding-top: 1%;
+    padding-bottom: 13%;  
+}
+.custom-container-text span{
+    font-size: 200%;
+    
+}
+.custom-a{  
+    margin-left: 10px;
+    width: 7%;
+    height: 7%;
+}
