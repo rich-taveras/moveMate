@@ -1,3 +1,15 @@
+require('dotenv').config();
+
+// Access the API key
+const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
+// API requests here
+app.get('/getApiKey', (req, res) => {
+  res.send(`const apiKey = "${process.env.GOOGLE_MAPS_API_KEY}";`);
+});
+
+
+
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
