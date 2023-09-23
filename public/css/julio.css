@@ -24,7 +24,15 @@ body {
   /*padding-bottom: 13%;   */
   /* margin-bottom: 200px; */
 }
-
+.background-img-map{
+    
+    background-image: url("/images/map.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 .custom-a {
   margin-left: 10px;
   width: 7%;
@@ -32,14 +40,22 @@ body {
 }
 .custom-hero {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
+}
+ .cards{
+border: none;
 }
 .custom-section-cards img {
-  
+  position: relative;
   height: 60%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   width: 50%;
+  bottom: 50px;
+}
+.custom-section-map{
+    position: relative;
+    bottom: 80px;
 }
