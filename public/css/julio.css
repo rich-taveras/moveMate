@@ -25,13 +25,13 @@ body {
   /* margin-bottom: 200px; */
 }
 .background-img-map{
-    
+    filter: blur(5px);
     background-image: url("/images/map.jpg");
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .custom-a {
   margin-left: 10px;
@@ -46,16 +46,19 @@ body {
 border: none;
 }
 .custom-section-cards img {
-  position: relative;
-  height: 60%;
+  position: relative; 
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  width: 50%;
-  bottom: 50px;
+  width: 40%;
+  height: 40%;
+  
 }
 .custom-section-map{
     position: relative;
     bottom: 80px;
+}
+.custom-section-about{
+  bottom: 10px;
 }
