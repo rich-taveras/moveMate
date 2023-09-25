@@ -1,0 +1,64 @@
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  color: red;
+}
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.custom-container-text {
+  text-align: center;
+  padding-top: 200px;
+  /*padding-bottom: 13%;   */
+  /* margin-bottom: 200px; */
+}
+.background-img-map{
+    filter: blur(5px);
+    background-image: url("/images/map.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.custom-a {
+  margin-left: 10px;
+  width: 7%;
+  height: 7%;
+}
+.custom-hero {
+  width: 100%;
+  height: 70vh;
+}
+ .cards{
+border: none;
+}
+.custom-section-cards img {
+  position: relative; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 40%;
+  height: 40%;
+  
+}
+.custom-section-map{
+    position: relative;
+    bottom: 80px;
+}
+.custom-section-about{
+  bottom: 10px;
+}

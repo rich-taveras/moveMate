@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="css/rich.css">
+
+<div class="containerWrapper">
+<div class="containerOne">
+    <h1>Pick and Drop Delivery</h1>
+    <label for="pickup">Pickup address:</label>
+    <input type="text" id="pickup" required><br><br>
+
+    <label for="dropoff">Drop address:</label>
+    <input type="text" id="dropoff" required><br><br>
+
+    <button onclick="calculateDistance()">Get the quote</button><br><br>
+
+    <p>Distance: <span id="distance"></span></p>
+    <p>Price per mile: <span id="priceMile"></span></p>
+    <p>Estimate price: <span id="estimatePrice"></span></p>
+    </div>
+    
+
+    <div class="containerTwo" id="map"></div>
+
+</div>
+    <script src="/getApiKey" async defer></script>
+
+    <script src="js/map.js"></script>

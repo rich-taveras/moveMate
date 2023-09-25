@@ -1,9 +1,10 @@
 const router = require('express').Router();
 const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
+const path = require('path');
 
-//all html routes are doing get method is reading
-//http://localhost:3001/
+// all html routes are doing get method is reading
+http://localhost:3001/
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -23,7 +24,7 @@ router.get('/', async (req, res) => {
     const projects = projectData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
+    res.render('home', { 
       projects, 
       logged_in: req.session.logged_in 
     });
@@ -88,5 +89,16 @@ router.get('/login', (req, res) => {
 
   res.render('login');
 });
+
+
+router.get('/julio', (req, res) => {
+
+  res.render('julio')
+})
+
+router.get('/rich', (req, res) => {
+
+  res.render('rich')
+})
 
 module.exports = router;
