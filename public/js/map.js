@@ -1,7 +1,4 @@
-// map.js
-
-// apiKey is now available globally
-console.log(apiKey);
+require('dotenv').config();
 
 
 function calculateDistance() {
