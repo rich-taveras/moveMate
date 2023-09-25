@@ -40,7 +40,7 @@ body {
 }
 .custom-hero {
   width: 100%;
-  height: 70vh;
+  height: 65vh;
 }
  .cards{
 border: none;
@@ -50,7 +50,7 @@ border: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 40%;
   height: 40%;
   
@@ -59,6 +59,41 @@ border: none;
     position: relative;
     bottom: 80px;
 }
-.custom-section-about{
-  bottom: 10px;
+.custom-card-animation:hover{
+ animation-duration: 3s;
+ animation-name: card;
+  
+}
+.custom-card-1{
+top: 30px;
+left: 50px;
+z-index: 1;
+}
+.custom-card-2{
+right: 30px;
+padding-left: 80px!important;
+padding-right: 20px!important;
+}
+.custom-card-3{
+left: 30px;
+padding-right: 80px!important;
+padding-left: 30px!important;
+padding-top: 50px;
+}
+.custom-card-4{
+  background-image: url("/images/red-delivery-van-in-a-row-of-white-vans-best-expr-2021-09-03-13-42-06-utc.jpg");
+  height: 633.73px;
+  width: 100%;
+  border-radius: 5px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 30px;
+  right: 50px;
+  z-index: 1;
+}
+
+.bg-blue{
+  background-color: #0c1239;
 }
