@@ -53,4 +53,5 @@ router.get("/", withAuth, async (req, res) => {
     res.status(400).json(err);
   }
 })
+router.get('/lourdes')
 module.exports = router;

@@ -101,4 +101,8 @@ router.get('/rich', (req, res) => {
   res.render('rich')
 })
 
+router.get('/lourdes',(req,res)=> {
+  res.render('lourdes')
+})
+
 module.exports = router;

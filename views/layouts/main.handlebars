@@ -16,7 +16,7 @@
     <link rel='stylesheet' href='/css/style.css' />
   </head>
   <body>
-    <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
+    {{!-- <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
       <div class='container-fluid'>
         <a class='navbar-brand text-light custom-a' href='#'><img  src="/images/logo.jpg" alt=""></a>
         <button
@@ -50,7 +50,7 @@
         <a class="navbar-brand text-light  d-none d-lg-block p-4" href="/login">Login</a>
         <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
       </div>
-    </nav>
+    </nav> --}}
     <!-- Conditionally render login or logout links -->
     {{!-- {{#if logged_in}}
             <a href='/profile'>profile</a>
@@ -60,6 +60,11 @@
             <a href='/login'>login</a>
             <a href='/login'>signup</a>
           {{/if}} --}}
+           <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    
+
     <main>
       <!-- Render the sub layout -->
       {{{body}}}
