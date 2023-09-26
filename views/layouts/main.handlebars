@@ -19,10 +19,10 @@
 
   <body>
 
-    <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
+    {{!-- <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
       <div class='container-fluid'>
         <a class='navbar-brand text-light custom-a' href='#'><img  src="/images/logo.jpg" alt=""></a>
-        {{!-- <button
+        <button
           class='navbar-toggler'
           type='button'
           data-bs-toggle='collapse'
@@ -51,26 +51,18 @@
           </ul>
         </div>
         <a class="navbar-brand text-light  d-none d-lg-block p-4" href="/login">Login</a>
-        <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a> --}}
+        <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
       </div>
-    </nav>
+    </nav> --}}
     <!-- Conditionally render login or logout links -->
-    {{!-- {{#if logged_in}}
-            <a href='/profile'>profile</a>
-            |
-            <button class='no-button' id='logout'>logout</button>
-          {{else}}
-            <a href='/login'>login</a>
 
-            <a href='/login'>signup</a>
-          {{/if}} --}}
 
     <main>
 
       <!-- Render the sub layout -->
       {{{body}}}
-    {{!-- </main>
-    <footer>
+    </main>
+    {{!-- <footer>
       <div class='card text-center'>
         <div class='card-header'>
           Featured
@@ -100,9 +92,9 @@
       referrerpolicy='no-referrer'
     ></script>
     <!-- Render script for logged in users only -->
-    {{!-- {{#if logged_in}}
+    {{#if logged_in}}
       <script src='/js/logout.js'></script>
-    {{/if}} --}}
+    {{/if}}
   </body>
 
 </html>

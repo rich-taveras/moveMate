@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Optional: Setting a background color */
+    background-color: #f4f4f4;
 }
 
 .containerOne, .containerTwo {
@@ -15,21 +15,21 @@ body {
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1); 
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 .containerWrapper {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerWrapper .containerOne,
 .containerWrapper .containerTwo {
     flex: 0 0 calc(100% - 10px);
-    margin: 0 5px;
+    margin: 10 5px;
 }
-
 
 input,
 button {
