@@ -54,6 +54,24 @@
         <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
       </div>
     </nav>
+    {{! Video Section }}
+<section class='position-relative custom-hero'>
+  <video
+    class='position-absolute'
+    src='/images/videoMoveMate (2).mp4'
+    autoplay
+    loop
+    playsinline
+    muted
+  ></video>
+  <div class='position-relative custom-container-text'>
+    <h1 class='text-light' style='font-size: 350%;'>Delivery Made Simple</h1>
+    <p class='text-light' style='font-size: 100%;'>Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Animi voluptatem delectus adipisci
+      voluptatibus dolorem.</p>
+  </div>
+</section>
+{{! ------------------ }}
     <!-- Conditionally render login or logout links -->
     {{!-- {{#if logged_in}}
             <a href='/profile'>profile</a>
@@ -71,19 +89,14 @@
       {{{body}}}
     </main>
     <footer>
-      <div class='card text-center'>
-        <div class='card-header'>
-          Featured
-        </div>
-        <div class='card-body'>
-          <h5 class='card-title'>Special title treatment</h5>
-          <p class='card-text'>With supporting text below as a natural lead-in
-            to additional content.</p>
-
-        </div>
-        <div class='card-footer text-body-secondary'>
-        </div>
-      </div>
+      <div class="card mb-3">
+  <video class="card-img-top" alt="..."> <video src=""></video>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+</div>
     </footer>
 
     {{! Bootstrap Script }}
@@ -91,13 +104,6 @@
       src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'
       integrity='sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm'
       crossorigin='anonymous'
-    ></script>
-    {{! Jquery Script }}
-    <script
-      src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'
-      integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=='
-      crossorigin='anonymous'
-      referrerpolicy='no-referrer'
     ></script>
     <!-- Render script for logged in users only -->
     {{!-- {{#if logged_in}}
