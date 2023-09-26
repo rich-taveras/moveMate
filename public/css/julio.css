@@ -44,8 +44,8 @@ body {
   height: 7%;
 }
 .custom-hero {
-  width: 100%;
-  height: 65vh;
+  width: 100vw;
+  height: 55vh;
 }
  .cards{
 border: none;

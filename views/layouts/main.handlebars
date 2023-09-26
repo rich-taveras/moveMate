@@ -19,9 +19,14 @@
 
   <body>
 
-    <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
+    <nav
+      class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'
+    >
       <div class='container-fluid'>
-        <a class='navbar-brand text-light custom-a' href='#'><img  src="/images/logo.jpg" alt=""></a>
+        <a class='navbar-brand text-light custom-a' href='#'><img
+            src='/images/logo.jpg'
+            alt=''
+          /></a>
         <button
           class='navbar-toggler'
           type='button'
@@ -42,36 +47,25 @@
                 href='#'
               ><h4>Home</h4></a>
             </li>
-            <li class='nav-item text-light'>
-              <a class='nav-link text-light' href='#'><h4>Features</h4></a>
+            <li class='nav-item text-white'>
+              <a class='nav-link text-white' href='#'><h4>Features</h4></a>
             </li>
             <li class='nav-item'>
               <a class='nav-link text-light' href='#'><h4>Pricing</h4></a>
-            </li>           
+            </li>
           </ul>
         </div>
-        <a class="navbar-brand text-light  d-none d-lg-block p-4" href="/login">Login</a>
-        <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
+        <a
+          class='navbar-brand text-light d-none d-lg-block p-4'
+          href='/login'
+        >Login</a>
+        <a
+          class='navbar-brand text-light d-none d-lg-block p-4'
+          href='/login'
+        >Signup</a>
       </div>
     </nav>
-    {{! Video Section }}
-<section class='position-relative custom-hero'>
-  <video
-    class='position-absolute'
-    src='/images/videoMoveMate (2).mp4'
-    autoplay
-    loop
-    playsinline
-    muted
-  ></video>
-  <div class='position-relative custom-container-text'>
-    <h1 class='text-light' style='font-size: 350%;'>Delivery Made Simple</h1>
-    <p class='text-light' style='font-size: 100%;'>Lorem ipsum dolor sit amet
-      consectetur adipisicing elit. Animi voluptatem delectus adipisci
-      voluptatibus dolorem.</p>
-  </div>
-</section>
-{{! ------------------ }}
+
     <!-- Conditionally render login or logout links -->
     {{!-- {{#if logged_in}}
             <a href='/profile'>profile</a>
@@ -88,16 +82,24 @@
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    <footer>
-      <div class="card mb-3">
-  <video class="card-img-top" alt="..."> <video src=""></video>
+    
+    <footer >
+      <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+    2 days ago
   </div>
 </div>
     </footer>
+
+
 
     {{! Bootstrap Script }}
     <script
