@@ -1,33 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pick and Drop Delivery</title>
-    <style>
-        #map {
-            height: 400px;
-            width: 100%;
-            border: 2px solid black;
-        }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg&libraries=places" async defer></script>
+<link rel="stylesheet" href="css/rich.css">
 
-</head>
-<body>
-    <h1>Pick and Drop Delivery</h1>
-    <label for="pickup">Pickup address:</label>
+<div class="containerWrapper">
+<div class="containerOne">
+    <h1>Move Mate</h1>
+    <label for="pickup">&#8679; Set Pickup Location</label>
     <input type="text" id="pickup" required><br><br>
 
-    <label for="dropoff">Drop address:</label>
+    <label for="dropoff">&#8681; Set Drop Off Location</label>
     <input type="text" id="dropoff" required><br><br>
 
-    <button onclick="calculateDistance()">Press to get distance</button><br><br>
+    <button onclick="calculateDistance()">Get Estimate &#8680;</button><br><br>
 
     <p>Distance: <span id="distance"></span></p>
+    <p>Price per mile: <span id="priceMile"></span></p>
+    <p>Estimate price: <span id="estimatePrice"></span></p>
+    </div>
 
-    <div id="map"></div>
+    <div class="containerTwo" id="map"></div>
+    
 
-    <script src="public/js/map.js"></script>
-</body>
-</html>
+</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer></script>
+    <script src="js/map.js"></script>
