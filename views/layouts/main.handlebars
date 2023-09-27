@@ -1,5 +1,4 @@
 <html lang='en'>
-
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -16,67 +15,45 @@
     <link rel='stylesheet' href='/css/jass.css' />
     <link rel='stylesheet' href='/css/style.css' />
   </head>
-
   <body>
-
-    <nav
-      class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'
-    >
-    {{!-- <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
-      <div class='container-fluid'>
-        <a class='navbar-brand text-light custom-a' href='#'><img
-            src='/images/logo.jpg'
-            alt=''
-          /></a>
-        <button
-          class='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNavDropdown'
-          aria-controls='navbarNavDropdown'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-        >
-          <span class='navbar-toggler-icon'></span>
-        </button>
-        <div class='collapse navbar-collapse m-4' id='navbarNavDropdown'>
-          <ul class='navbar-nav'>
-            <li class='nav-item'>
-              <a
-                class='nav-link active text-light'
-                aria-current='page'
-                href='#'
-              ><h4>Home</h4></a>
-            </li>
-            <li class='nav-item text-white'>
-              <a class='nav-link text-white' href='#'><h4>Features</h4></a>
-            </li>
-            <li class='nav-item'>
-              <a class='nav-link text-light' href='#'><h4>Pricing</h4></a>
-            </li>
-          </ul>
-        </div>
-        <a
-          class='navbar-brand text-light d-none d-lg-block p-4'
-          href='/login'
-        >Login</a>
-        <a
-          class='navbar-brand text-light d-none d-lg-block p-4'
-          href='/login'
-        >Signup</a>
-      </div>
-    </nav>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     <!-- Conditionally render login or logout links -->
-
-
+    {{!-- {{#if logged_in}}
+            <a href='/profile'>profile</a>
+            |
+            <button class='no-button' id='logout'>logout</button>
+          {{else}}
+            <a href='/login'>login</a>
+            <a href='/login'>signup</a>
+          {{/if}} --}}
     <main>
-
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    
-    {{!-- <footer >
+    <footer >
       <div class="card text-center">
   <div class="card-header">
     Featured
@@ -90,10 +67,7 @@
     2 days ago
   </div>
 </div>
-    </footer> --}}
-
-
-
+    </footer>
     {{! Bootstrap Script }}
     <script
       src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'
@@ -101,9 +75,8 @@
       crossorigin='anonymous'
     ></script>
     <!-- Render script for logged in users only -->
-    {{#if logged_in}}
+    {{!-- {{#if logged_in}}
       <script src='/js/logout.js'></script>
-    {{/if}}
+    {{/if}} --}}
   </body>
-
 </html>

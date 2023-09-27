@@ -92,8 +92,15 @@ router.get('/login', (req, res) => {
 
 
 router.get('/julio', (req, res) => {
-  
+
   res.render('julio')
 })
 
+router.get('/faq', (req, res) => {
+  res.render('faq')
+})
+
+router.get('/rich',(req,res) => {
+res.render('rich')
+})
 module.exports = router;
