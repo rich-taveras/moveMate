@@ -92,17 +92,22 @@ router.get('/login', (req, res) => {
 
 
 router.get('/julio', (req, res) => {
+  // imagesList = []
 
-  res.render('julio')
+  // imagesList.push({
+  //   img1:"/images/1.jpg",
+  //   img2:"/images/2.jpg",
+  //   img3:"/images/3.jpg",
+  //   video:"/images/M44.mov",
+  //   video1:"/images/video.mp4"
+  // })
+  res.render('julio',{imagesList})
 })
-
-router.get('/rich', (req, res) => {
-
-  res.render('rich')
-})
-
-router.get('/lourdes',(req,res)=> {
+router.get('/lourdes', (req, res) => {
   res.render('lourdes')
 })
 
+router.get('/rich',(req,res) => {
+res.render('rich')
+})
 module.exports = router;

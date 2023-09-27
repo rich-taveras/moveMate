@@ -1,3 +1,8 @@
+:root{
+  --yellow: #f6a604;
+  --blue:  #0c1239;
+  --cake: #e3d9dd;
+}
 img {
   width: 100%;
   height: 100%;
@@ -40,7 +45,7 @@ body {
 }
 .custom-hero {
   width: 100%;
-  height: 70vh;
+  height: 65vh;
 }
  .cards{
 border: none;
@@ -50,7 +55,7 @@ border: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   width: 40%;
   height: 40%;
   
@@ -59,6 +64,79 @@ border: none;
     position: relative;
     bottom: 80px;
 }
-.custom-section-about{
-  bottom: 10px;
+.custom-card-animation:hover{
+ animation-duration: 3s;
+ animation-name: card;
+  
+}
+.custom-card-1{
+top: 30px;
+left: 50px;
+z-index: 1;
+}
+.custom-card-2{
+right: 30px;
+padding-left: 80px!important;
+padding-right: 20px!important;
+}
+.custom-card-3{
+left: 30px;
+padding-right: 80px!important;
+padding-left: 30px!important;
+padding-top: 50px;
+}
+.custom-card-4{
+  background-image: url("/images/red-delivery-van-in-a-row-of-white-vans-best-expr-2021-09-03-13-42-06-utc.jpg");
+  height: 633.73px;
+  width: 100%;
+  border-radius: 5px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 30px;
+  right: 50px;
+  z-index: 1;
+}
+
+.bg-blue{
+  background-color: var(--blue);
+}
+.background-img-city{ 
+  background-color: var(--blue);
+ border-radius:5px ;
+    background-color: var(--blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+}
+.custom-container-number{
+  background-color: var(--blue);
+  margin-top: 50px;
+}
+.number-text{
+  background-color: var(--yellow);
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+.number{
+  font-size: 400%;
+}
+.custom-div-1{
+  background-image: url("https://elements-cover-images-0.imgix.net/f6f8795b-4d6a-40b8-81e8-2bd621826f50?auto=compress%2Cformat&fit=max&w=1370&s=521481977b5312ace42e1bd4a54462ec");
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 30px;
+  border: solid 1px;
+  border-radius: 10px;
+}
+.custom-div-2{
+  z-index: 1;
+  top: 30px;
+  border: solid 1px;
+  border-radius: 10px;
 }

@@ -14,15 +14,17 @@
     <link rel='stylesheet' href='/css/julio.css' />
     <link rel='stylesheet' href='/css/jass.css' />
     <link rel='stylesheet' href='/css/style.css' />
+    <link rel='stylesheet' href='./css/faq.css' />
+
   </head>
   <body>
-    {{!-- <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
+    <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
       <div class='container-fluid'>
         <a class='navbar-brand text-light custom-a' href='#'><img  src="/images/logo.jpg" alt=""></a>
         <button
           class='navbar-toggler'
           type='button'
-          data-bs-toggle='collapse'
+          ata-bs-toggle='collapse'
           data-bs-target='#navbarNavDropdown'
           aria-controls='navbarNavDropdown'
           aria-expanded='false'
@@ -50,7 +52,8 @@
         <a class="navbar-brand text-light  d-none d-lg-block p-4" href="/login">Login</a>
         <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
       </div>
-    </nav> --}}
+    </nav>
+   
     <!-- Conditionally render login or logout links -->
     {{!-- {{#if logged_in}}
             <a href='/profile'>profile</a>
@@ -70,18 +73,14 @@
       {{{body}}}
     </main>
     <footer>
-      <div class='card text-center'>
-        <div class='card-header'>
-          Featured
-        </div>
-        <div class='card-body'>
-          <h5 class='card-title'>Special title treatment</h5>
-          <p class='card-text'>With supporting text below as a natural lead-in
-            to additional content.</p>
-        </div>
-        <div class='card-footer text-body-secondary'>
-        </div>
-      </div>
+      <div class="card mb-3">
+  <video class="card-img-top" alt="..."> <video src=""></video>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+</div>
     </footer>
     {{! Bootstrap Script }}
     <script
