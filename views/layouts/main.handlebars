@@ -18,9 +18,16 @@
 
   </head>
   <body>
-    <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
+
+    <nav
+      class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'
+    >
+    {{!-- <nav class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'>
       <div class='container-fluid'>
-        <a class='navbar-brand text-light custom-a' href='#'><img  src="/images/logo.jpg" alt=""></a>
+        <a class='navbar-brand text-light custom-a' href='#'><img
+            src='/images/logo.jpg'
+            alt=''
+          /></a>
         <button
           class='navbar-toggler'
           type='button'
@@ -41,39 +48,51 @@
                 href='#'
               ><h4>Home</h4></a>
             </li>
-            <li class='nav-item text-light'>
-              <a class='nav-link text-light' href='#'><h4>Features</h4></a>
+            <li class='nav-item text-white'>
+              <a class='nav-link text-white' href='#'><h4>Features</h4></a>
             </li>
             <li class='nav-item'>
               <a class='nav-link text-light' href='#'><h4>Pricing</h4></a>
             </li>
           </ul>
         </div>
-        <a class="navbar-brand text-light  d-none d-lg-block p-4" href="/login">Login</a>
-        <a class="navbar-brand text-light d-none d-lg-block p-4" href="/login">Signup</a>
+        <a
+          class='navbar-brand text-light d-none d-lg-block p-4'
+          href='/login'
+        >Login</a>
+        <a
+          class='navbar-brand text-light d-none d-lg-block p-4'
+          href='/login'
+        >Signup</a>
       </div>
     </nav>
-   
-    <!-- Conditionally render login or logout links -->
-    {{!-- {{#if logged_in}}
-            <a href='/profile'>profile</a>
-            |
-            <button class='no-button' id='logout'>logout</button>
-          {{else}}
-            <a href='/login'>login</a>
-            <a href='/login'>signup</a>
-          {{/if}} --}}
-           <div id="map"></div>
 
-    <!-- prettier-ignore -->
-    
+    <!-- Conditionally render login or logout links -->
+
 
     <main>
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    <footer>
-    </footer>
+    
+    {{!-- <footer >
+      <div class="card text-center">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+  <div class="card-footer text-body-secondary">
+    2 days ago
+  </div>
+</div>
+    </footer> --}}
+
+
+
     {{! Bootstrap Script }}
     <script
       src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'
@@ -81,9 +100,9 @@
       crossorigin='anonymous'
     ></script>
     <!-- Render script for logged in users only -->
-    {{!-- {{#if logged_in}}
+    {{#if logged_in}}
       <script src='/js/logout.js'></script>
-    {{/if}} --}}
+    {{/if}}
   </body>
 </html>
 

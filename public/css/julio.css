@@ -26,8 +26,8 @@ body {
 .custom-container-text {
   text-align: center;
   padding-top: 200px;
-  /*padding-bottom: 13%;   */
-  /* margin-bottom: 200px; */
+  padding-bottom: 13%;  
+  margin-bottom: 200px;
 }
 .background-img-map{
     filter: blur(5px);
@@ -44,8 +44,8 @@ body {
   height: 7%;
 }
 .custom-hero {
-  width: 100%;
-  height: 65vh;
+  width: 100vw;
+  height: 55vh;
 }
  .cards{
 border: none;

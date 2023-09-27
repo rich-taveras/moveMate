@@ -2,30 +2,23 @@
 
 <div class="containerWrapper">
 <div class="containerOne">
-    <h1>Pick and Drop Delivery</h1>
-    <label for="pickup">Pickup address:</label>
+    <h1>Move Mate</h1>
+    <label for="pickup">&#8679; Set Pickup Location</label>
     <input type="text" id="pickup" required><br><br>
 
-    <label for="dropoff">Drop address:</label>
+    <label for="dropoff">&#8681; Set Drop Off Location</label>
     <input type="text" id="dropoff" required><br><br>
 
-    <button onclick="calculateDistance()">Get the quote</button><br><br>
+    <button onclick="calculateDistance()">Get Estimate &#8680;</button><br><br>
 
     <p>Distance: <span id="distance"></span></p>
     <p>Price per mile: <span id="priceMile"></span></p>
     <p>Estimate price: <span id="estimatePrice"></span></p>
     </div>
+
+    <div class="containerTwo" id="map"></div>
     
 
-    {{!-- <div class="containerTwo" id="map"></div> --}}
-    {{!-- <div id="map"></div>
-
-    <!-- prettier-ignore -->
-    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg", v: "weekly"});</script> --}}
-
 </div>
-    {{!-- <script src="/getApiKey" async defer></script> --}}
-<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-        ({key: "AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg", v: "weekly"});</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"defer></script>
     <script src="js/map.js"></script>
