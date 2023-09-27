@@ -3,35 +3,35 @@ const { Project, User } = require('../models');
 const withAuth = require('../utils/auth');
 const path = require('path');
 
-//all html routes are doing get method is reading
-//http://localhost:3001/
-// router.get('/', async (req, res) => {
-//   try {
-//     // Get all projects and JOIN with user data
-//     const projectData = await Project.findAll({
-//       include: [
-//         {
-//           model: User,
-//           attributes: ['name'],
-//         },
-//       ],
-//     });
-//     //select user.name , project.* from project join user on user.id = project.user_id
+// all html routes are doing get method is reading
+// http://localhost:3001/
+router.get('/', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const projectData = await Project.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+      ],
+    });
+    //select user.name , project.* from project join user on user.id = project.user_id
 
-// //projectData is raw data, can't use raw data on handlebar template
-//     // Serialize data so the template can read it
-//     //take raw data and format it to json
-//     const projects = projectData.map((project) => project.get({ plain: true }));
+//projectData is raw data, can't use raw data on handlebar template
+    // Serialize data so the template can read it
+    //take raw data and format it to json
+    const projects = projectData.map((project) => project.get({ plain: true }));
 
-//     // Pass serialized data and session flag into template
-//     res.render('home', { 
-//       projects, 
-//       logged_in: req.session.logged_in 
-//     });
-//   } catch (err) {
-//     res.status(500).json(err);
-//   }
-// });
+    // Pass serialized data and session flag into template
+    res.render('home', { 
+      projects, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 
 // //http://localhost:3001/project/1
@@ -80,20 +80,19 @@ const path = require('path');
 // });
 
 // //http://localhost:3001/login
-// router.get('/login', (req, res) => {
-//   // If the user is already logged in, redirect the request to another route
-//   if (req.session.logged_in) {
-//     res.redirect('/profile');
-//     return;
-//   }
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/profile');
+    return;
+  }
 
-//   res.render('login');
-// });
+  res.render('login');
+});
 
 
-router.get('/julio', (req, res) => {
-  
-  res.render('julio')
+router.get('rich', (req,res) => {
+
+  res.render('rich')
 })
-
 module.exports = router;
