@@ -1,3 +1,6 @@
+require('dotenv').config();
+
+
 function calculateDistance() {
     var pickup = document.getElementById('pickup').value;
     var dropoff = document.getElementById('dropoff').value;
