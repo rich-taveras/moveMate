@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { Project, User } = require('../../models');
-const withAuth = require('../../utils/auth');
+const { Project, User } = require('../models');
+const withAuth = require('../utils/auth');
 const path = require('path');
 
 // all html routes are doing get method is reading
@@ -96,8 +96,8 @@ router.get('/julio', (req, res) => {
   res.render('julio')
 })
 
-router.get('/lourdes', (req, res) => {
-  res.render('lourdes')
+router.get('/faq', (req, res) => {
+  res.render('faq')
 })
 
 router.get('/rich',(req,res) => {
