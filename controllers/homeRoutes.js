@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 const path = require('path');
 
 // all html routes are doing get method is reading
-http://localhost:3001/
+// http://localhost:3001/
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -83,7 +83,7 @@ router.get('/profile', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/faq');
     return;
   }
 
@@ -103,4 +103,5 @@ router.get('/faq', (req, res) => {
 router.get('/rich',(req,res) => {
 res.render('rich')
 })
-module.exports = router;
+
+module.exports = router
