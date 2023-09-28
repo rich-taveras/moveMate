@@ -46,12 +46,12 @@
             </li>
             {{#if logged_in}}
               <li class='nav-item'>
-                <a class='nav-link' href='/profile'>profile</a></li>
-
-              |<li class='nav-item'><a
+                <a class='nav-link' href='/faq'>FAQ</a></li>
+              <li class='nav-item'><a
+                  href='/'
                   class='nav-link'
                   id='logout'
-                >logout</a></li>
+                >Logout</a></li>
 
             {{else}}
               <li class='nav-item'><a
@@ -68,35 +68,26 @@
         </div>
       </div>
     </nav>
-
-
-    <!-- Conditionally render login or logout links -->
-    {{!-- {{#if logged_in}}
-            <a href='/profile'>profile</a>
-            |
-            <button class='no-button' id='logout'>logout</button>
-          {{else}}
-            <a href='/login'>login</a>
-            <a href='/login'>signup</a>
-          {{/if}} --}}
+    
     <main>
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    <footer >
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-body-secondary">
-    2 days ago
-  </div>
-</div>
+    <footer>
+      <div class='card text-center'>
+        <div class='card-header'>
+          Featured
+        </div>
+        <div class='card-body'>
+          <h5 class='card-title'>Special title treatment</h5>
+          <p class='card-text'>With supporting text below as a natural lead-in
+            to additional content.</p>
+          <a href='#' class='btn btn-primary'>Go somewhere</a>
+        </div>
+        <div class='card-footer text-body-secondary'>
+          2 days ago
+        </div>
+      </div>
     </footer>
     {{! Bootstrap Script }}
     <script
@@ -105,8 +96,8 @@
       crossorigin='anonymous'
     ></script>
     <!-- Render script for logged in users only -->
-    {{!-- {{#if logged_in}}
+    {{#if logged_in}}
       <script src='/js/logout.js'></script>
-    {{/if}} --}}
+    {{/if}}
   </body>
 </html>
