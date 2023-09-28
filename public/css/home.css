@@ -3,12 +3,16 @@
   --blue:  #0c1239;
   --cake: #e3d9dd;
 }
+.bg-yellow{
+  background-color: var(--yellow);
+}
 img {
   width: 100%;
   height: 100%;
 }
-a {
-  color: red;
+a:hover {
+  color: var(--yellow)!important;
+  text-decoration: none!important;
 }
 video {
   object-fit: cover;
@@ -139,4 +143,7 @@ padding-top: 50px;
   top: 30px;
   border: solid 1px;
   border-radius: 10px;
+}
+.custom-a-login:hover{
+color: var(--blue)!important
 }

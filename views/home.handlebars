@@ -1,7 +1,15 @@
-  {{! Video Section }}
+<div
+  class='ml-5 mt-3 card position-absolute bg-transparent border-0'
+  style='width: 5rem;'
+>
+  <img src='/images/logo.jpg' class='card-img-top' alt='...' />
+
+</div>
+
+{{! Video Section }}
 <section class='position-relative custom-hero'>
   <video
-    class='position-absolute'
+    class='position-absolute z-index-2'
     src='/images/videoMoveMate (2).mp4'
     autoplay
     loop
@@ -17,19 +25,21 @@
 </section>
 {{! ------------------ }}
 {{! Map Sesion }}
-<div class='position-relative border-2'>
+<div class='position-relative border- z-index-2'>
   <div class='background-img-map position-absolute'></div>
-  <section class='row d-flex justify-content-center custom-section-map'>
-    <div class='col-10 card mb-3 border'>
+  <section
+    class='row d-flex flex-row justify-content-center custom-section-map'
+  >
+    <div class='col-10 col-sm-8 col-md-8 col-lg-10 col-xl-10 card mb-3 border'>
       <div class='row g-0'>
-        <div class='col-md-4 p-0'>
+        <div class='col-md-12 col-lg-5 col-xl-4 p-0'>
           <img
             src='/images/map.jpg'
             class='img-fluid rounded-start'
             alt='...'
           />
         </div>
-        <div class='col-md-8'>
+        <div class='d-none d-lg-block col-lg-7 col-xl-8'>
           <div class='card-body text-black'>
             <h5 class='card-title'>We Provide Service Across All The United
               Estates</h5>
@@ -40,13 +50,7 @@
               laboriosam! Incidunt sint repellat ab at officia culpa,
               dignissimos minus a excepturi eius sit, ducimus dolore recusandae
               ipsa dolor reiciendis maxime neque.</p>
-            <p class='card-text'>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Animi fuga itaque velit, asperiores facere
-              voluptatum? Natus fugit distinctio veniam officia, voluptatem
-              laudantium nihil, minus eveniet nostrum quasi, consequuntur
-              laboriosam! Incidunt sint repellat ab at officia culpa,
-              dignissimos minus a excepturi eius sit, ducimus dolore recusandae
-              ipsa dolor reiciendis maxime neque.</p>
+
           </div>
         </div>
       </div>
@@ -102,47 +106,50 @@
 {{!How Move Mate Work  }}
 
 <section
-  class='container-sm mt-5 d-flex flex-row justify-content-evenly py-sm-3 mb-4 text-center'
+  class='mt-5 d-flex flex-row justify-content-center py-sm-3 mb-4 text-center'
 >
-  <h1 class='col-12 mb-3'>How Move Mate Work?</h1>
-  <div class='col-2'>
+  <div
+    class='col-10 d-flex flex-row justify-content-center justify-content-evenly'
+  >
+    <h1 class='col-12 mb-3'>How Move Mate Work?</h1>
+    <div class='col-10 col-sm-5 col-md-4 col-xl-3'>
 
-    <img
-      src='https://elements-cover-images-0.imgix.net/34964ab0-441c-4da7-8cd6-260df6f09aec?auto=compress%2Cformat&w=1370&fit=max&s=e56a9007e3144efdea6aa690a8d0e34a'
-      class='card-img-top img-fluid mb-2'
-      alt=''
-    />
+      <img
+        src='https://elements-cover-images-0.imgix.net/34964ab0-441c-4da7-8cd6-260df6f09aec?auto=compress%2Cformat&w=1370&fit=max&s=e56a9007e3144efdea6aa690a8d0e34a'
+        class='card-img-top img-fluid mb-2'
+        alt=''
+      />
 
-    <h4>1. Enter Your Details</h4>
-    <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Odio, asperiores.</p>
-  </div>
-  <div class='col-2'>
-    <img
-      src='https://elements-cover-images-0.imgix.net/91c9c197-f11d-48ea-9307-8f5df065d866?auto=compress%2Cformat&fit=max&w=1370&s=e857022b09b8d079c30fa448455efd42'
-      class='card-img-top img-fluid mb-2'
-      alt=''
-    />
-    <h4>2. Follow Your Shipment</h4>
-    <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Repellat, nisi!</p>
-  </div>
-  <div class='col-2'>
-    <div class='img-small'>
+      <h4>1. Enter Your Details</h4>
+      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Odio, asperiores.</p>
+    </div>
+    <div class='col-10 col-sm-5 col-md-4 col-xl-3'>
       <img
         src='https://elements-cover-images-0.imgix.net/91c9c197-f11d-48ea-9307-8f5df065d866?auto=compress%2Cformat&fit=max&w=1370&s=e857022b09b8d079c30fa448455efd42'
         class='card-img-top img-fluid mb-2'
         alt=''
       />
+      <h4>2. Follow Your Shipment</h4>
+      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Repellat, nisi!</p>
     </div>
-    <h4>3. Review and Tip</h4>
-    <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-      adipisicing elit. Minima, eligendi.</p>
+    <div class='col-10 col-sm-5 col-md-4 col-xl-3'>
+      <div class='img-small'>
+        <img
+          src='https://elements-cover-images-0.imgix.net/91c9c197-f11d-48ea-9307-8f5df065d866?auto=compress%2Cformat&fit=max&w=1370&s=e857022b09b8d079c30fa448455efd42'
+          class='card-img-top img-fluid mb-2'
+          alt=''
+        />
+      </div>
+      <h4>3. Review and Tip</h4>
+      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Minima, eligendi.</p>
+    </div>
+    <div class='col-12 mt-5'>
+      <a href='/login' class='number-text text-white custom-a-login bg-yellow'>Click Here to Log In</a>
+    </div>
   </div>
-  <div class='col-12'>
-    <button type='button' class='btn btn-primary'>Click Here to Log In</button>
-  </div>
-
 </section>
 
 {{! ------------------ }}
@@ -236,7 +243,7 @@
 </section>
 
 {{! -------------------- }}
-<div class="col-12" style="height: 50px;"></div>
+<div class='col-12' style='height: 50px;'></div>
 {{!-- {{! Content }}
 <section class='col-12 d-flex flex-row justify-content-center mt-5 bg-blue'>
   <div class='col-3 text-center bg-body custom-div-1 position-relative mr-5'>
@@ -293,5 +300,3 @@
 </section>
 
 {{! ---------------- }} --}}
-
-<script src='/js/julio.js'></script>
