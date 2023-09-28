@@ -96,4 +96,9 @@ router.get('/julio', (req, res) => {
   res.render('julio')
 })
 
+router.get('/rich', (req, res) => {
+  
+  res.render('rich')
+})
+
 module.exports = router;
