@@ -6,6 +6,9 @@
 .bg-yellow{
   background-color: var(--yellow);
 }
+.color-yellow{
+  color: var(--yellow);
+}
 img {
   width: 100%;
   height: 100%;
@@ -93,7 +96,7 @@ padding-left: 30px!important;
 padding-top: 50px;
 }
 .custom-card-4{
-  background-image: url("/images/red-delivery-van-in-a-row-of-white-vans-best-expr-2021-09-03-13-42-06-utc.jpg");
+  background-image: url("/images/van.jpg");
   height: 633.73px;
   width: 100%;
   border-radius: 5px;

@@ -8,14 +8,15 @@
 
 {{! Video Section }}
 <section class='position-relative custom-hero'>
-  <video
-    class='position-absolute z-index-2'
-    src='/images/videoMoveMate (2).mp4'
-    autoplay
-    loop
-    playsinline
-    muted
-  ></video>
+  <video class='position-absolute z-index-2' autoplay loop playsinline muted>
+    <source src='/images/homeVideoMoveMate.mp4' type='video/mp4' />
+  </video>
+  <div class='position-relative custom-container-text'>
+    <h1 class='text-light' style='font-size: 350%;'>Delivery Made Simple</h1>
+    <p class='text-light' style='font-size: 100%;'>Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Animi voluptatem delectus adipisci
+      voluptatibus dolorem.</p>
+  </div>
 </section>
 {{! ------------------ }}
 {{! Map Sesion }}
@@ -141,7 +142,10 @@
         adipisicing elit. Minima, eligendi.</p>
     </div>
     <div class='col-12 mt-5'>
-      <a href='/login' class='number-text text-white custom-a-login bg-yellow'>Click Here to Log In</a>
+      <a
+        href='/login'
+        class='number-text text-black custom-a-login bg-yellow'
+      >Click Here to Log In</a>
     </div>
   </div>
 </section>
@@ -157,19 +161,19 @@
   <div class='d-flex justify-content-evenly text-center'>
     <div>
       <h3 class='number' id='num0' data-count='1500'>0</h3>
-      <h5 class='number-text'>Deivered Package</h5>
+      <h5 class='number-text text-black'>Deivered Package</h5>
     </div>
     <div>
       <h3 class='number' id='num1' data-count='900'>0</h3>
-      <h5 class='number-text'>Office Wordwide</h5>
+      <h5 class='number-text text-black'>Office Wordwide</h5>
     </div>
     <div>
       <h3 class='number' id='num2' data-count='900'>0</h3>
-      <h5 class='number-text'>Employees</h5>
+      <h5 class='number-text text-black'>Employees</h5>
     </div>
     <div>
       <h3 class='number' id='num3' data-count='900'>0</h3>
-      <h5 class='number-text'>Tons of Goods</h5>
+      <h5 class='number-text text-black'>Tons of Goods</h5>
     </div>
   </div>
 </section>
@@ -185,15 +189,15 @@
   <div class='col-8 flex-row d-flex justify-content-center'>
     <div class='col-6 position-relative custom-card-1'>
       <img
-        src='/images/portrait-happy-man-delivery-box-and-hand-shake-ge-2023-09-06-22-30-31-utc.jpg'
+        src='/images/happy-men.jpg'
         class='object-fit-cover border rounded'
-        alt=''
+        alt='portrait happy man delivery box and hand shake gesture'
       />
     </div>
     <div
       class='col-6 bg-primary-subtle rounded position-relative custom-card-2'
     >
-      <h1 class='text-center'>About Us</h1>
+      <h1 class='text-center' id="about">About Us</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
         ipsa pariatur, explicabo facilis labore consectetur commodi architecto
         vel iusto laudantium odit aliquam beatae minus qui quos. Necessitatibus

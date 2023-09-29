@@ -91,10 +91,10 @@ router.get('/login', (req, res) => {
 });
 
 
-router.get('/julio', (req, res) => {
+// router.get('/julio', (req, res) => {
 
-  res.render('julio')
-})
+//   res.render('julio')
+// })
 
 router.get('/faq', (req, res) => {
   res.render('faq')
