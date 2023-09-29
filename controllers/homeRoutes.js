@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 const path = require('path');
 
 // all html routes are doing get method is reading
-http://localhost:3001/
+// http://localhost:3001/
 router.get('/', async (req, res) => {
   try {
     // Get all projects and JOIN with user data
@@ -60,7 +60,7 @@ router.get('/project/:id', async (req, res) => {
 
 //http://localhost:3001/profile
 // Use withAuth middleware to prevent access to route
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/faq', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
@@ -70,7 +70,7 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('profile', {
+    res.render('faq', {
       ...user,
       logged_in: true
     });
@@ -83,7 +83,7 @@ router.get('/profile', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/profile');
+    res.redirect('/faq');
     return;
   }
 
@@ -92,13 +92,16 @@ router.get('/login', (req, res) => {
 
 
 router.get('/julio', (req, res) => {
-  
+
   res.render('julio')
 })
 
-router.get('/rich', (req, res) => {
-  
-  res.render('rich')
+router.get('/faq', (req, res) => {
+  res.render('faq')
 })
 
-module.exports = router;
+router.get('/pricing',(req,res) => {
+res.render('pricing')
+})
+
+module.exports = router

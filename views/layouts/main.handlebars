@@ -1,5 +1,4 @@
 <html lang='en'>
-
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
@@ -12,87 +11,89 @@
       crossorigin='anonymous'
     />
     <link rel='stylesheet' href='/css/reset.css' />
-    <link rel='stylesheet' href='/css/julio.css' />
+    <link rel='stylesheet' href='/css/home.css' />
     <link rel='stylesheet' href='/css/jass.css' />
     <link rel='stylesheet' href='/css/style.css' />
   </head>
-
-  <body>
-
-    <nav
-      class='row navbar navbar-expand-lg text-light position-absolute w-100 z-1'
-    >
-      <div class='container-fluid'>
-        <a class='navbar-brand text-light custom-a' href='#'><img
-            src='/images/logo.jpg'
-            alt=''
-          /></a>
+  <body>    
+    <nav class='navbar navbar-expand-lg bg-blue position-static'>
+      <div class='container-fluid '>
+        <a class='navbar-brand' href='#'></a>
         <button
           class='navbar-toggler'
           type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNavDropdown'
-          aria-controls='navbarNavDropdown'
+          data-bs-toggle='offcanvas'
+          data-bs-target='#offcanvasScrolling'
+          aria-controls='navbarNav'
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
           <span class='navbar-toggler-icon'></span>
         </button>
-        <div class='collapse navbar-collapse m-4' id='navbarNavDropdown'>
+        <div class="offcanvas offcanvas-start custom-offcanvas" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-5" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-body d-flex justify-content-lg-center bg-blue">
+            
           <ul class='navbar-nav'>
-            <li class='nav-item'>
-              <a
-                class='nav-link active text-light'
-                aria-current='page'
-                href='#'
-              ><h4>Home</h4></a>
+            <li class='nav-item ml-5 mr-5'>
+              <a class='nav-link active text-white' aria-current='page' href='/'>Home</a>
             </li>
-            <li class='nav-item text-white'>
-              <a class='nav-link text-white' href='#'><h4>Features</h4></a>
+            <li class='nav-item ml-5 mr-5 '>
+              <a class='nav-link text-white' href='#'>Features</a>
             </li>
-            <li class='nav-item'>
-              <a class='nav-link text-light' href='#'><h4>Pricing</h4></a>
+            <li class='nav-item ml-5 mr-5'>
+              <a class='nav-link text-white' href='#'>Pricing</a>
             </li>
+            
+            {{#if logged_in}}
+              <li class='nav-item ml-5 mr-5'>
+                <a class='nav-link text-white' href='/faq'>FAQ</a></li>
+              <li class='nav-item ml-5 mr-5'><a
+                  href='/'
+                  class='nav-link text-white'
+                  id='logout'
+                >Logout</a></li>
+
+            {{else}}
+              <li class='nav-item ml-5 mr-5'><a
+                  class='nav-link text-white'
+                  href='/login'
+                >login</a></li>
+
+              <li class='nav-item ml-5 mr-5'>
+                <a class='nav-link text-white' href='/login'>signup</a></li>
+
+            {{/if}}
+            
           </ul>
+          </div>
         </div>
-        <a
-          class='navbar-brand text-light d-none d-lg-block p-4'
-          href='/login'
-        >Login</a>
-        <a
-          class='navbar-brand text-light d-none d-lg-block p-4'
-          href='/login'
-        >Signup</a>
       </div>
     </nav>
 
-    <!-- Conditionally render login or logout links -->
 
-
+  
+   
     <main>
 
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    
-   <footer >
-      <div class="card text-center">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-body-secondary">
-    2 days ago
-  </div>
-</div>
+    <footer>
+      <div class='card text-center'>
+        <div class='card-header'>
+          Featured
+        </div>
+        <div class='card-body'>
+          <h5 class='card-title'>Special title treatment</h5>
+          <p class='card-text'>With supporting text below as a natural lead-in
+            to additional content.</p>
+          <a href='#' class='btn btn-primary'>Go somewhere</a>
+        </div>
+        <div class='card-footer text-body-secondary'>
+          2 days ago
+        </div>
+      </div>
     </footer>
-
-
-
     {{! Bootstrap Script }}
     <script
       src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js'
@@ -103,6 +104,6 @@
     {{#if logged_in}}
       <script src='/js/logout.js'></script>
     {{/if}}
+    <script src="/js/home.js"></script>
   </body>
-
 </html>
