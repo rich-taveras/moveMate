@@ -7,32 +7,23 @@ const path = require('path');
 // http://localhost:3001/
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
-    const projectData = await Project.findAll({
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
+    if (!req.session.logged_in) {
+      res.render('home')
+    }else{
+    const userData = await User.findByPk(req.session.user_id, {
+    attributes: {exclude: ['password']}
     });
-    //select user.name , project.* from project join user on user.id = project.user_id
 
-//projectData is raw data, can't use raw data on handlebar template
-    // Serialize data so the template can read it
-    //take raw data and format it to json
-    const projects = projectData.map((project) => project.get({ plain: true }));
+    const user = userData.get({ plain: true });
 
-    // Pass serialized data and session flag into template
-    res.render('home', { 
-      projects, 
-      logged_in: req.session.logged_in 
-    });
+    res.render('home', {
+      ...user,
+      logged_in: req.session.logged_in,
+    })}
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
 
 //http://localhost:3001/project/1
 router.get('/project/:id', async (req, res) => {
@@ -50,13 +41,12 @@ router.get('/project/:id', async (req, res) => {
 
     res.render('project', {
       ...project,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
-
 
 //http://localhost:3001/profile
 // Use withAuth middleware to prevent access to route
@@ -65,14 +55,14 @@ router.get('/faq', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      // include: [{ model: Project }],
     });
 
     const user = userData.get({ plain: true });
 
     res.render('faq', {
       ...user,
-      logged_in: true
+      logged_in: true,
     });
   } catch (err) {
     res.status(500).json(err);
@@ -90,18 +80,17 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-
 // router.get('/julio', (req, res) => {
 
 //   res.render('julio')
 // })
 
-router.get('/faq', (req, res) => {
-  res.render('faq')
-})
+// router.get('/faq', (req, res) => {
+//   res.render('faq');
+// });
 
-router.get('/rich',(req,res) => {
-res.render('rich')
-})
+// router.get('/rich', (req, res) => {
+//   res.render('rich');
+// });
 
-module.exports = router
+module.exports = router;
