@@ -73,6 +73,7 @@ border: none;
 .custom-section-map{
     position: relative;
     bottom: 80px;
+    height: 300px;
 }
 .custom-card-animation:hover{
  animation-duration: 3s;
@@ -122,10 +123,7 @@ padding-top: 50px;
     width: 80%;
     height: 80%;
 }
-.custom-container-number{
-  background-color: var(--blue);
-  margin-top: 50px;
-}
+
 .number-text{
   background-color: var(--yellow);
   padding: 10px 20px 10px 20px;
@@ -161,4 +159,22 @@ color: var(--blue)!important
   to{
 
   }
+}
+
+
+
+
+
+
+
+
+.bg-van{
+  background-image: url(/images/van.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px;
 }

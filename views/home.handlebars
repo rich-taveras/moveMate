@@ -20,36 +20,30 @@
 </section>
 {{! ------------------ }}
 {{! Map Sesion }}
-<div class='position-relative border- z-index-2'>
+<div class='position-relative z-index-2'>
   <div class='background-img-map position-absolute'></div>
-  <section
-    class='row d-flex flex-row justify-content-center custom-section-map'
-  >
-    <div class='col-10 col-sm-8 col-md-8 col-lg-10 col-xl-10 card mb-3 border'>
-      <div class='row g-0'>
-        <div class='col-md-12 col-lg-5 col-xl-4 p-0'>
-          <img
-            src='/images/map.jpg'
-            class='img-fluid rounded-start'
-            alt='...'
-          />
-        </div>
-        <div class='d-none d-lg-block col-lg-7 col-xl-8'>
-          <div class='card-body text-black'>
-            <h5 class='card-title'>We Provide Service Across All The United
-              Estates</h5>
-            <p class='card-text'>Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Animi fuga itaque velit, asperiores facere
-              voluptatum? Natus fugit distinctio veniam officia, voluptatem
-              laudantium nihil, minus eveniet nostrum quasi, consequuntur
-              laboriosam! Incidunt sint repellat ab at officia culpa,
-              dignissimos minus a excepturi eius sit, ducimus dolore recusandae
-              ipsa dolor reiciendis maxime neque.</p>
 
-          </div>
-        </div>
+  <section class='custom-section-map d-flex justify-content-center'>
+    <div
+      class='col-10 position-relative d-flex flex-row justify-content-center'
+    >
+      <div class='position-relative z-2 text-center mt-5 d-none d-sm-block'>
+        <h5 class='text-black'>
+          <b>We Provide Service Across All The United </b>
+          Estates</h5>
+        <p class='text-black'>Are you planning a move? Whether it's across town
+          or across the country, MoveMate is here to simplify your relocation
+          journey. We understand that moving can be a stressful experience, but
+          with MoveMate by your side, you can move with confidence.</p>
       </div>
+      <img
+        class='position-absolute z-1'
+        src='/images/map.jpg'
+        style='width: 100%;height:100%; object-fit: cover; border-radius: 5px;'
+        alt=''
+      />
     </div>
+
   </section>
   {{! ---------------------- }}
   {{! Cards Section }}
@@ -64,8 +58,8 @@
       <img src='/images/icons/6.png' class='card-img-top' alt='...' />
       <div class=''>
         <h2>Fast Service</h2>
-        <p class=''>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Fuga cumque a dolorem omnis vitae?</p>
+        <p class=''>We offer a wide range of services tailored to your specific
+          needs, from packing and loading to transportation and unpacking.</p>
       </div>
 
     </div>
@@ -76,8 +70,9 @@
       <img src='/images/icons/12.png ' class='card-img-top' alt='...' />
       <div class='card-body'>
         <h2>Care</h2>
-        <p class='card-text'>Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit. Quam sequi adipisci numquam enim minus.</p>
+        <p class='card-text'>We believe in fair and transparent pricing. No
+          hidden fees or surprises just straightforward quotes that fit your
+          budget.</p>
       </div>
 
     </div>
@@ -89,8 +84,11 @@
       <img src='/images/icons/13.png' class='card-img-top' alt='...' />
       <div class='card-body'>
         <h2>24/7 Support</h2>
-        <p class='card-text'>Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Perferendis accusamus iste vel cumque reiciendis?</p>
+        <p class='card-text'>Our friendly team is here to help. Contact us today
+          to discuss your upcoming move, request a quote, or schedule your
+          moving services.
+
+        </p>
       </div>
 
     </div>
@@ -116,8 +114,9 @@
       />
 
       <h4>1. Enter Your Details</h4>
-      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Odio, asperiores.</p>
+      <p class='mx-auto text-navy-70'>Getting started with MoveMate is easy.
+        Simply enter your details, including your current location, destination,
+        moving date, and the type of services you need.</p>
     </div>
     <div class='col-10 col-sm-5 col-md-4 col-xl-3'>
       <img
@@ -126,8 +125,12 @@
         alt=''
       />
       <h4>2. Follow Your Shipment</h4>
-      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Repellat, nisi!</p>
+      <p class='mx-auto text-navy-70'>Our advanced tracking system allows you to
+        stay updated on the location and status of your belongings throughout
+        the entire moving process. We believe in full transparency, giving you
+        peace of mind knowing where your possessions are at all times.
+
+      </p>
     </div>
     <div class='col-10 col-sm-5 col-md-4 col-xl-3'>
       <div class='img-small'>
@@ -138,8 +141,9 @@
         />
       </div>
       <h4>3. Review and Tip</h4>
-      <p class='mx-auto text-navy-70'>Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Minima, eligendi.</p>
+      <p class='mx-auto text-navy-70'>Your feedback matters to us; it helps us
+        refine our services and ensures that every customer receives the best
+        possible moving experience.</p>
     </div>
     <div class='col-12 mt-5'>
       <a
@@ -153,34 +157,205 @@
 {{! ------------------ }}
 
 {{! NUmbers Section }}
-<section class='custom-container-number text-light pt-5' style='height: 300px;'>
 
-  <div class='text-center'>
+<section
+  class='d-flex flex-row justify-content-center justify-content-evenly text-white bg-blue mb-5 pt-5'
+>
+  <div class='col-12 text-center'>
     <h2>Use Move Mate for all of your delivery & moving needs.</h2>
   </div>
-  <div class='d-flex justify-content-evenly text-center'>
-    <div>
-      <h3 class='number' id='num0' data-count='1500'>0</h3>
-      <h5 class='number-text text-black'>Deivered Package</h5>
-    </div>
-    <div>
-      <h3 class='number' id='num1' data-count='900'>0</h3>
-      <h5 class='number-text text-black'>Office Wordwide</h5>
-    </div>
-    <div>
-      <h3 class='number' id='num2' data-count='900'>0</h3>
-      <h5 class='number-text text-black'>Employees</h5>
-    </div>
-    <div>
-      <h3 class='number' id='num3' data-count='900'>0</h3>
-      <h5 class='number-text text-black'>Tons of Goods</h5>
+  <div
+    class='col-10 col-sm-5 col-xl-3 col-xxl-2 text-center mb-5'
+    style='height: 15vh;'
+  >
+    <div
+      id='carouselExampleRide'
+      class='carousel slide'
+      data-bs-ride='carousel'
+    >
+      <div class='carousel-inner'>
+        <div class='carousel-item active' data-bs-interval='6000'>
+          <h3 class='number' id='num0' data-count='1500'>0</h3>
+          <h5 class='number-text text-black'>Deivered Package</h5>
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num1' data-count='380'>0</h3>
+          <h5 class='number-text text-black'>Office Wordwide</h5>
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num2' data-count='900'>0</h3>
+          <h5 class='number-text text-black'>Employees</h5>
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num3' data-count='650'>0</h3>
+          <h5 class='number-text text-black'>Tons of Goods</h5>
+        </div>
+      </div>
     </div>
   </div>
+  <div
+    class='col-10 col-sm-5 col-xl-3 col-xxl-2 text-center mb-5'
+    style='height: 15vh;'
+  >
+    <div
+      id='carouselExampleRide'
+      class='carousel slide'
+      data-bs-ride='carousel'
+    >
+      <div class='carousel-inner'>
+        <div class='carousel-item active' data-bs-interval='6000'>
+          <h3 class='number' id='num7' data-count='650'>0</h3>
+          <h5 class='number-text text-black'>Tons of Goods</h5>
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num4' data-count='1500'>0</h3>
+          <h5 class='number-text text-black'>Deivered Package</h5>
+
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num5' data-count='380'>0</h3>
+          <h5 class='number-text text-black'>Office Wordwide</h5>
+
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num6' data-count='900'>0</h3>
+          <h5 class='number-text text-black'>Employees</h5>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class='col-10 col-sm-5 col-xl-3 col-xxl-2 text-center mb-5'
+    style='height: 15vh;'
+  >
+    <div
+      id='carouselExampleRide'
+      class='carousel slide'
+      data-bs-ride='carousel'
+    >
+      <div class='carousel-inner'>
+        <div class='carousel-item active' data-bs-interval='6000'>
+          <h3 class='number' id='num10' data-count='900'>0</h3>
+          <h5 class='number-text text-black'>Employees</h5>
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num11' data-count='650'>0</h3>
+          <h5 class='number-text text-black'>Tons of Goods</h5>
+
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num8' data-count='1500'>0</h3>
+          <h5 class='number-text text-black'>Deivered Package</h5>
+
+        </div>
+        <div class='carousel-item' data-bs-interval='6000'>
+          <h3 class='number' id='num9' data-count='380'>0</h3>
+          <h5 class='number-text text-black'>Office Wordwide</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
 {{! -------------- }}
 {{! About Us Section }}
 
-<section class='d-flex pt-5 flex-row justify-content-center position-relative'>
+<section class='d-flex justify-content-evenly mb-5'>
+  <div class='col-11 d-flex flex-row'>
+    <div class='d-none d-lg-block col-lg-4'>
+      <img
+        src='/images/happy-men.jpg'
+        style='object-fit:cover; border-radius:5px'
+        alt=''
+      />
+    </div>
+    <div class='col-12 col-lg-8'>
+      <h3 class='text-center'>About Us</h3>
+      <p><b> Our Vision:</b>
+        At MoveMate, we envision a world where moving is not a hassle but an
+        opportunity for growth and new beginnings. We strive to be the
+        cornerstone upon which you build your dreams, one move at a time.</p>
+
+      <p>
+        <b> Our Mission:</b>
+        Our mission is to redefine the way you move. We are committed to
+        providing unparalleled moving services, ensuring the safety of your
+        belongings, and delivering peace of mind to you and your family. With
+        precision, dedication, and a touch of warmth, we handle every move as if
+        it were our own.</p>
+      <p>
+        <b>Why Choose MoveMate:</b></p>
+      <ul>
+        <li>1.<b>Experience:</b>
+          With years of experience in the moving industry, we bring a wealth of
+          knowledge and expertise to your move. Our seasoned professionals have
+          successfully handled a diverse range of moves, making us adept at
+          overcoming any challenges that might arise during your relocation.</li>
+        <br />
+        <li>2.
+          <b>Reliability:</b>
+          When you choose MoveMate, you choose reliability. We understand the
+          significance of your belongings, and we treat them with the utmost
+          care. From the moment we pack your first box to the moment we unpack
+          your last, you can count on us to handle your possessions as if they
+          were priceless treasures.</li>
+        <br />
+        <li>
+          3.
+          <b>Customer-Centric Approach:</b>
+          Your satisfaction is our priority. We listen to your unique needs,
+          tailoring our services to match your requirements. Our team is always
+          ready to assist you, providing personalized solutions and ensuring a
+          positive moving experience.</li>
+        <br />
+        <li>
+          4.
+          <b>Transparency:</b>
+          We believe in open communication and transparent processes. Our
+          pricing is clear, comprehensive, and devoid of hidden charges. We keep
+          you informed at every step, ensuring you have complete clarity about
+          your move.</li>
+        <br />
+        <li>
+          5.
+          <b>Community Engagement:</b>
+          MoveMate is more than just a moving company; we are a part of your
+          community. We actively engage with local initiatives, supporting the
+          neighborhoods we serve. Your trust in us empowers us to give back and
+          create a positive impact.</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <div style="height: 200px;">
+    <div class="bg-van"></div>
+  </div>
+  <div class="d-flex justify-content-center color-yellow mt-2 mb-2">
+  <div class="col-10 text-center pt-3 pb-2 bg-blue" style="border-radius: 5px;">
+    <h3 class="text-white">Join the MoveMate Experience:</h3>
+    <p>Join the MoveMate family and experience moving like never before. Let us
+        handle the logistics while you focus on the excitement of your new
+        journey. With MoveMate, your moving adventure begins and ends with a
+        smile. Embark on Your Journey with MoveMate - Where Moving Feels Like
+        Home.</p>
+        <p>At MoveMate, Your Move Is Our Priority:We understand that moving can be
+        a significant life event. At MoveMate, we don't just move your
+        belongings; we move your life. With our dedicated team, advanced
+        technology, and personalized services, we are committed to providing you
+        with a seamless and stress-free moving experience. Trust MoveMate to
+        handle your move, and let your new chapter begin with confidence.</p>  
+  </div>
+  </div>
+  <div class="mb-5" style="height: 200px;">
+    <div class="bg-van"></div>
+  </div>
+</section>
+
+{{! <section class='d-flex flex-row pt-5 flex-row justify-content-center position-relative'>
   <div
     class='background-img-city position-absolute mt-5'
     style='top: 100px;'
@@ -197,21 +372,16 @@
     <div
       class='col-6 bg-primary-subtle rounded position-relative custom-card-2'
     >
-      <h1 class='text-center' id="about">About Us</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        ipsa pariatur, explicabo facilis labore consectetur commodi architecto
-        vel iusto laudantium odit aliquam beatae minus qui quos. Necessitatibus
-        commodi nihil deleniti eveniet voluptates harum id magnam.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero,
-        nemo eaque nobis fugiat, eos nesciunt ratione aliquam, repudiandae esse
-        perferendis dolor quidem culpa sed natus deleniti asperiores recusandae
-        deserunt?</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat
-        reprehenderit rerum ad aut sequi, est odio delectus voluptates iusto
-        dolorum voluptatum cupiditate animi incidunt porro modi exercitationem
-        ex sed molestiae velit, laborum harum mollitia maiores ratione. Cum
-        debitis libero eligendi fugit. Omnis eos eum voluptatem reprehenderit
-        animi, tempore dolore aut?</p>
+      <h1 class='text-center'>About Us</h1>
+      <p><b> Our Vision:</b>At MoveMate, we envision a world where moving is not
+        a hassle but an opportunity for growth and new beginnings. We strive to
+        be the cornerstone upon which you build your dreams, one move at a time.</p>
+      <p>
+        <b> Our Mission:</b>Our mission is to redefine the way you move. We are
+        committed to providing unparalleled moving services, ensuring the safety
+        of your belongings, and delivering peace of mind to you and your family.
+        With precision, dedication, and a touch of warmth, we handle every move
+        as if it were our own.</p>
     </div>
   </div>
 
@@ -220,28 +390,53 @@
       class='col-5 bg-primary-subtle rounded position-relative custom-card-3'
     >
       <h1>About Us</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        ipsa pariatur, explicabo facilis labore consectetur commodi architecto
-        vel iusto laudantium odit aliquam beatae minus qui quos. Necessitatibus
-        commodi nihil deleniti eveniet voluptates harum id magnam.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero,
-        nemo eaque nobis fugiat, eos nesciunt ratione aliquam, repudiandae esse
-        perferendis dolor quidem culpa sed natus deleniti asperiores recusandae
-        deserunt?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nisi
-        iure numquam delectus dolore eveniet. Natus assumenda provident commodi
-        est aut nisi aliquid praesentium quo iure voluptate, fugiat incidunt
-        ullam, reprehenderit quam? Numquam reprehenderit quam sint veritatis nam
-        consectetur ea maiores aliquam beatae. Cupiditate nihil laboriosam
-        suscipit earum dignissimos expedita?</p>
+      <p>
+        <b>Why Choose MoveMate:</b>
+
+        1. Experience: With years of experience in the moving industry, we bring
+        a wealth of knowledge and expertise to your move. Our seasoned
+        professionals have successfully handled a diverse range of moves, making
+        us adept at overcoming any challenges that might arise during your
+        relocation. 2. Reliability: When you choose MoveMate, you choose
+        reliability. We understand the significance of your belongings, and we
+        treat them with the utmost care. From the moment we pack your first box
+        to the moment we unpack your last, you can count on us to handle your
+        possessions as if they were priceless treasures.
+
+      </p>
+      <p>
+        3. Customer-Centric Approach: Your satisfaction is our priority. We
+        listen to your unique needs, tailoring our services to match your
+        requirements. Our team is always ready to assist you, providing
+        personalized solutions and ensuring a positive moving experience. 4.
+        Transparency: We believe in open communication and transparent
+        processes. Our pricing is clear, comprehensive, and devoid of hidden
+        charges. We keep you informed at every step, ensuring you have complete
+        clarity about your move. 5. Community Engagement: MoveMate is more than
+        just a moving company; we are a part of your community. We actively
+        engage with local initiatives, supporting the neighborhoods we serve.
+        Your trust in us empowers us to give back and create a positive impact.
+
+        <b> Join the MoveMate Experience:</b>
+        Join the MoveMate family and experience moving like never before. Let us
+        handle the logistics while you focus on the excitement of your new
+        journey. With MoveMate, your moving adventure begins and ends with a
+        smile. Embark on Your Journey with MoveMate - Where Moving Feels Like
+        Home.</p>
+      <p>At MoveMate, Your Move Is Our Priority:We understand that moving can be
+        a significant life event. At MoveMate, we don't just move your
+        belongings; we move your life. With our dedicated team, advanced
+        technology, and personalized services, we are committed to providing you
+        with a seamless and stress-free moving experience. Trust MoveMate to
+        handle your move, and let your new chapter begin with confidence.</p>
     </div>
     <div class='col-6 position-relative custom-card-4'></div>
 
   </div>
-</section>
+</section> }}
 
 {{! -------------------- }}
-<div class='col-12' style='height: 50px;'></div>
+
 {{!-- {{! Content }}
 <section class='col-12 d-flex flex-row justify-content-center mt-5 bg-blue'>
   <div class='col-3 text-center bg-body custom-div-1 position-relative mr-5'>
