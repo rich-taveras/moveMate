@@ -8,18 +8,19 @@ const path = require('path');
 router.get('/', async (req, res) => {
   try {
     if (!req.session.logged_in) {
-      res.render('home')
-    }else{
-    const userData = await User.findByPk(req.session.user_id, {
-    attributes: {exclude: ['password']}
-    });
+      res.render('home');
+    } else {
+      const userData = await User.findByPk(req.session.user_id, {
+        attributes: { exclude: ['password'] },
+      });
 
-    const user = userData.get({ plain: true });
+      const user = userData.get({ plain: true });
 
-    res.render('home', {
-      ...user,
-      logged_in: req.session.logged_in,
-    })}
+      res.render('home', {
+        ...user,
+        logged_in: req.session.logged_in,
+      });
+    }
   } catch (err) {
     res.status(500).json(err);
   }
@@ -80,17 +81,33 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-// router.get('/julio', (req, res) => {
+router.get('/signup', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/faq');
+    return;
+  }
 
-//   res.render('julio')
-// })
+  res.render('signup');
+});
 
-// router.get('/faq', (req, res) => {
-//   res.render('faq');
-// });
+router.get('/pricing', withAuth, async (req, res) => {
+  try {
+    // Find the logged in user based on the session ID
+    const userData = await User.findByPk(req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      // include: [{ model: Project }],
+    });
 
-// router.get('/rich', (req, res) => {
-//   res.render('rich');
-// });
+    const user = userData.get({ plain: true });
+
+    res.render('pricing', {
+      ...user,
+      logged_in: true,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 
 module.exports = router;

@@ -10,6 +10,8 @@
       integrity='sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9'
       crossorigin='anonymous'
     />
+    {{! Map }}
+    <link rel='stylesheet' href='css/pricing.css' />
     {{! <link rel="stylesheet" href="/css/pricing.css"> }}
     <link rel='stylesheet' href='/css/reset.css' />
     <link rel='stylesheet' href='/css/home.css' />
@@ -55,9 +57,11 @@
               <li class='nav-item ml-5 mr-5'>
                 <a class='nav-link text-white' href='#about'>About Us</a>
               </li>
-              <li class='nav-item ml-5 mr-5'>
-                <a class='nav-link text-white' href='#'>Pricing</a>
-              </li>
+              {{#if logged_in}}
+                <li class='nav-item ml-5 mr-5'>
+                  <a class='nav-link text-white' href='/pricing'>Pricing</a>
+                </li>
+              {{/if}}
 
               {{#if logged_in}}
                 <li class='nav-item ml-5 mr-5'>
@@ -69,13 +73,15 @@
                   >Logout</a></li>
 
               {{else}}
+                <li class='nav-item ml-5 mr-5'>
+                  <a class='nav-link text-white' href='/login'>FAQ</a></li>
                 <li class='nav-item ml-5 mr-5'><a
-                    class='nav-link text-white'
+                    class='nav-link text-white' id="login"
                     href='/login'
                   >login</a></li>
 
                 <li class='nav-item ml-5 mr-5'>
-                  <a class='nav-link text-white' href='/login'>signup</a></li>
+                  <a class='nav-link text-white' id="signup" href='/signup'>signup</a></li>
 
               {{/if}}
 
@@ -90,15 +96,17 @@
       <!-- Render the sub layout -->
       {{{body}}}
     </main>
-    <footer class='bg-blue rounded-top border border-2'>
-      <div class="d-flex justify-content-center position-relative rounded-top">
-        <div class="col-12 text-center text-black p-3 bg-body fs-4"><span class="color-yellow">MOVE</span>MATE</div>
+    <footer class='bg-blue rounded-top border border-2 mt-5'>
+      <div class='d-flex justify-content-center position-relative rounded-top'>
+        <div class='col-12 text-center text-black p-3 bg-body fs-4'><span
+            class='color-yellow'
+          >MOVE</span>MATE</div>
       </div>
-      
-      <section class='d-flex flex-row justify-content-between text-white'><div
-          class='position-relative col-1 m-3'
-        >
-          <div class='ml-5 mt-3 card position-absolute bg-transparent border-0'
+
+      <section class='d-flex flex-row justify-content-between text-white'>
+        <div class='position-relative col-1 m-3'>
+          <div
+            class='ml-5 mt-3 card position-absolute bg-transparent border-0'
             style='width: 5rem;'
           >
             <img src='/images/logo.jpg' class='card-img-top' alt='...' />
@@ -112,30 +120,44 @@
               Useful Links
             </li>
             <ul>
-              <li class='mb-1'>Home</li>
-              <li class='mb-1'>About Us</li>
-              <li class='mb-1'>Pricing</li>
-              <li class='mb-1'>Login</li>
-              <li class='mb-1'>Signup</li>
+              <li class='mb-1'><a href="/">Home</a> </li>
+              <li class='mb-1'><a href="#about">About Us</a> </li>
+              <li class='mb-1'><a href="/pricing">Pricing</a> </li>
+              {{#if logged_in}}
+
+              <li class='mb-1'><a href="/login">FAQ</a></li>
+              <li class='mb-1'><a href="/">Logout</a></li>
+
+              {{else}}
+
+               <li class='mb-1'><a href="/login">Login</a></li>
+              <li class='mb-1'><a href="/signup">Signup</a></li>
+
+              {{/if}}
+
+             
             </ul>
           </ul>
         </div>
-         <div class='col-12 mt-3 col-8 d-flex flex-row'>
-          <div class=" col-12 d-flex flex-row justify-content-center justify-content-evenly text-end mb-4">
-          <div class='col-3'>
-            <i class='fa-brands fa-facebook fa-2xl'></i>
+        <div class='col-12 mt-3 col-8 d-flex flex-row'>
+          <div
+            class='col-12 d-flex flex-row justify-content-center justify-content-evenly text-end mb-4'
+          >
+            <div class='col-3'>
+              <i class='fa-brands fa-facebook fa-2xl'></i>
+            </div>
+            <div class='col-3'>
+              <i class='fa-brands fa-instagram fa-2xl'></i>
+            </div>
+            <div class='col-3'>
+              <i class='fa-brands fa-whatsapp fa-2xl'></i>
+            </div>
+            <div class='col-3'>
+              <i class='fa-brands fa-pinterest fa-2xl'></i>
+            </div>
           </div>
-          <div class='col-3'>
-            <i class="fa-brands fa-instagram fa-2xl"></i>
-          </div>
-          <div class='col-3'>
-            <i class="fa-brands fa-whatsapp fa-2xl"></i>
-          </div>
-          <div class='col-3'>
-            <i class="fa-brands fa-pinterest fa-2xl"></i>
-          </div>
-         </div>
         </div>
+
         <div class='col-12 mb-3'>
           <span>Copyright 2023 MoveMate, All Right Reserved</span>
         </div>

@@ -1,8 +1,8 @@
 function movement() {
 
-    for (let i = 0; i < 16; i++) {        
+    for (let i = 0; i < 13; i++) {        
         let numEl = document.getElementById(`num${i}`) ;
-        let value = numEl.getAttribute("data-count")
+        let value = numEl.getAttribute("data-count");
       let iniValue = 0;
       let numSpeed = 10;
       let count = () => {
@@ -19,4 +19,4 @@ function movement() {
     }
   }
 
-  movement()
+  movement();
