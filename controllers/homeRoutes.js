@@ -100,8 +100,8 @@ router.get('/faq', (req, res) => {
   res.render('faq')
 })
 
-router.get('/rich',(req,res) => {
-res.render('rich')
+router.get('/pricing',(req,res) => {
+res.render('pricing')
 })
 
 module.exports = router
