@@ -6,6 +6,9 @@
 .bg-yellow{
   background-color: var(--yellow);
 }
+.color-yellow{
+  color: var(--yellow);
+}
 img {
   width: 100%;
   height: 100%;
@@ -70,6 +73,7 @@ border: none;
 .custom-section-map{
     position: relative;
     bottom: 80px;
+    height: 300px;
 }
 .custom-card-animation:hover{
  animation-duration: 3s;
@@ -93,7 +97,7 @@ padding-left: 30px!important;
 padding-top: 50px;
 }
 .custom-card-4{
-  background-image: url("/images/red-delivery-van-in-a-row-of-white-vans-best-expr-2021-09-03-13-42-06-utc.jpg");
+  background-image: url("/images/van.jpg");
   height: 633.73px;
   width: 100%;
   border-radius: 5px;
@@ -119,10 +123,7 @@ padding-top: 50px;
     width: 80%;
     height: 80%;
 }
-.custom-container-number{
-  background-color: var(--blue);
-  margin-top: 50px;
-}
+
 .number-text{
   background-color: var(--yellow);
   padding: 10px 20px 10px 20px;
@@ -151,11 +152,24 @@ padding-top: 50px;
 color: var(--blue)!important
 }
 
-@keyframes delay {
-  from{
+.card-shadow{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
 
-  }
-  to{
 
-  }
+
+
+
+
+
+
+.bg-van{
+  background-image: url(/images/van.jpg);
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 5px;
 }

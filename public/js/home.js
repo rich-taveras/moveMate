@@ -1,15 +1,14 @@
 function movement() {
-    
-    
-    for (let i = 0; i < 4; i++) {        
+
+    for (let i = 0; i < 13; i++) {        
         let numEl = document.getElementById(`num${i}`) ;
         let value = numEl.getAttribute("data-count");
       let iniValue = 0;
-      let numSpeed = 20;
+      let numSpeed = 10;
       let count = () => {
         iniValue = iniValue + numSpeed;
             
-        numEl.innerHTML = iniValue
+        numEl.innerHTML = "+" + iniValue
         if (iniValue < value) {
           setTimeout(() => {
             count();

@@ -1,29 +1,34 @@
-<head>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg&libraries=places" async defer></script>
-
-<link rel="stylesheet" href="css/pricing.css">
-</head>
-
-
-<div class="containerWrapper">
-<div class="containerOne">
-    <h1>Move Mate</h1>
-    <label for="pickup">&#8679; Set Pickup Location</label>
-    <input type="text" id="pickup" required><br><br>
-
-    <label for="dropoff">&#8681; Set Drop Off Location</label>
-    <input type="text" id="dropoff" required><br><br>
-
-    <button onclick="calculateDistance()">Get Estimate &#8680;</button><br><br>
-
-    <p>Distance in miles: <span id="distance"></span></p>
-    <p>Price per mile: $3.89 <span id="priceMile"></span></p>
-    <p>Estimate price: $<span id="estimatePrice"></span></p>
+<section class='d-flex justify-content-center'>
+  <div class='col-3 m-5'>
+    <div class='mb-3'>
+      <label for='pickup' class='form-label'>Pickup Location &#8679</label>
+      <input type='text' class='form-control' id='pickup' required />
+      <div id='emailHelp' class='form-text'>Building Number, Street Number, City
+        Name, State Abbreviation, Zip Code</div>
     </div>
+    <div class='mb-3'>
+      <label for='dropoff' class='form-label'>Set Drop Off &#8681</label>
+      <input type='text' class='form-control' id='dropoff' />
+      <div id='emailHelp' class='form-text'>Building Number, Street Number, City
+        Name, State Abbreviation, Zip Code</div>
+    </div>
+    <button
+      type='submit'
+      onclick='calculateDistance()'
+      class='btn btn-primary'
+    >Submit</button>
+    <div>
+      <p>Distance in miles: <span id='distance'></span></p>
+      <p>Price per mile: <span id='priceMile'></span></p>
+      <p>Estimate price: <span id='estimatePrice'></span></p>
+    </div>
+  </div>
+  <div class='col-6 m-5' id='map'></div>
+</section>
+<script
+  src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg&libraries=places'
+  async
+  defer
+></script>
 
-    <div class="containerTwo" id="map"></div>
-    
-
-</div>
- 
-    <script src="js/pricing.js"></script>
+<script src='js/pricing.js'></script>
