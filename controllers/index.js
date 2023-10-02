@@ -9,8 +9,6 @@ const testRoutes= require('./testRoute');
 //HTML endpoint is meant to present the web pages (VIEWS)
 //http://localhost:3001/
 router.use('/', homeRoutes);
-//http://localhost:3001/test
-router.use('/test',testRoutes);
 
 //API endpoint is meant to do CRUD (MODEL and Controller)
 //http://localhost:3001/api
