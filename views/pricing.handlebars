@@ -1,7 +1,8 @@
-<section class='d-flex justify-content-center'>
-  <div class='col-3 p-5 m-5 card-shadow rounded'>
+<section class='d-flex flex-row justify-content-center'>
+  <div class='col-11 col-sm-11 col-md-8 col-lg-6 col-xl-5 p-5 m-5 card-shadow rounded'>
     <div>
-      <h5 class="text-center mb-5 spacing buttn from-center">PRICING</h5>
+      <h5 class="text-center mb-5 spacing buttn from-center d-none d-sm-block">PRICING</h5>
+      <h5 class="text-center mb-5 spacing buttn from-center d-block d-sm-none" style="font-size: 80%!important;padding:0!important;">PRICING</h5>
     </div>
     <div class='mb-3'>
       <label for='pickup' class='form-label'>Pickup Location &#8679</label>
@@ -28,7 +29,7 @@
       <h5 class="m-2 mt-3">Estimate price: <span id='estimatePrice'></span></h5>
     </div>
   </div>
-  <div class='col-6 m-5' id='map'></div>
+  <div class='col-11 m-5 card-shadow' id='map'></div>
 </section>
 <script
   src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg&libraries=places'
