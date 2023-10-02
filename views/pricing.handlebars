@@ -1,5 +1,8 @@
 <section class='d-flex justify-content-center'>
-  <div class='col-3 m-5'>
+  <div class='col-3 p-5 m-5 card-shadow rounded'>
+    <div>
+      <h5 class="text-center mb-5 spacing buttn from-center">PRICING</h5>
+    </div>
     <div class='mb-3'>
       <label for='pickup' class='form-label'>Pickup Location &#8679</label>
       <input type='text' class='form-control' id='pickup' required />
@@ -12,15 +15,17 @@
       <div id='emailHelp' class='form-text'>Building Number, Street Number, City
         Name, State Abbreviation, Zip Code</div>
     </div>
+    <div class="d-flex justify-content-center">
     <button
       type='submit'
       onclick='calculateDistance()'
-      class='btn btn-primary'
+      class='navigation navigation-center border-0 card-shadow bg-blue'
     >Submit</button>
+    </div>
     <div>
-      <p>Distance in miles: <span id='distance'></span></p>
-      <p>Price per mile: <span id='priceMile'></span></p>
-      <p>Estimate price: <span id='estimatePrice'></span></p>
+      <h5 class="m-2 mt-3">Distance in miles: <span id='distance'></span></h5>
+      {{!-- <p>Price per mile: <span id='priceMile'></span></p> --}}
+      <h5 class="m-2 mt-3">Estimate price: <span id='estimatePrice'></span></h5>
     </div>
   </div>
   <div class='col-6 m-5' id='map'></div>
