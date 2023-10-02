@@ -1,68 +1,105 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-.containerOne, .containerTwo {
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
 .containerWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
 }
 
-.containerWrapper .containerOne,
-.containerWrapper .containerTwo {
-    flex: 0 0 calc(100% - 10px);
-    margin: 10 5px;
+.containerOne,
+.containerTwo {
+  flex: 0 0 48%; /* Adjust flex basis as needed */
+  box-sizing: border-box;
+  margin: 10px;
 }
-
 input,
 button {
-    margin: 5px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
+  margin: 10px;
+  padding: 12px 20px;
+  width: calc(100% - 24px);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 button {
-    background-color: #0c1239;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  background-color: #0c1239;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #f6a604;
+  background-color: #f6a604;
+}
+/* Style for Pickup and Dropoff Address Input Fields */
+#pickupAddress,
+#dropoffAddress {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-#distance {
-    font-weight: bold;
+#pickupCity,
+#dropoffCity,
+#pickupState,
+#dropoffState,
+#pickupZip,
+#dropoffZip {
+  width: calc(50% - 6px);
+  padding: 12px;
+  margin-bottom: 10px;
+  margin-right: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-#map {
-    height: 400px; /* The height is 400 pixels */
-    width: 100%; /* The width is the width of the web page */;
+#pickupCity,
+#dropoffCity {
+  float: left;
+}
+
+#pickupState,
+#dropoffState {
+  float: left;
+}
+
+#pickupZip,
+#dropoffZip {
+  float: right;
+}
+
+@media (max-width: 768px) {
+  .containerOne,
+  .containerTwo {
+    max-width: 100%; /* Adjusted max-width for smaller screens */
   }
 
-@media (min-width: 768px) {
-    .containerOne, .containerTwo {
-        max-width: 1000px;
+  #pickupCity,
+  #dropoffCity,
+  #pickupState,
+  #dropoffState,
+  #pickupZip,
+  #dropoffZip {
+    width: 100%;
+    margin-right: 0;
+    float: none;
+  }
+}
+@media (max-width: 576px) {
+    #pickupCity,
+    #dropoffCity,
+    #pickupState,
+    #dropoffState,
+    #pickupZip,
+    #dropoffZip {
+        width: 100%;
+        margin-bottom: 10px;
+        float: none;
     }
 }
-
-

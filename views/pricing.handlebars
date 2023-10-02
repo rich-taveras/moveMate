@@ -8,16 +8,25 @@
 <div class="containerWrapper">
 <div class="containerOne">
     <h1>Move Mate</h1>
-    <label for="pickup">&#8679; Set Pickup Location</label>
-    <input type="text" id="pickup" required><br><br>
+        <!-- Pickup Address -->
+            <label for="pickupAddress">&#8679; Pickup Address:</label>
+            <input type="text" id="pickupAddress" placeholder="Address">
+            <input type="text" id="pickupCity" placeholder="City">
+            <input type="text" id="pickupState" placeholder="State">
+            <input type="text" id="pickupZip" placeholder="Zip Code">
 
-    <label for="dropoff">&#8681; Set Drop Off Location</label>
-    <input type="text" id="dropoff" required><br><br>
+            <!-- Dropoff Address -->
+            <label for="dropoffAddress">&#8681; Dropoff Address:</label>
+            <input type="text" id="dropoffAddress" placeholder="Address">
+            <input type="text" id="dropoffCity" placeholder="City">
+            <input type="text" id="dropoffState" placeholder="State">
+            <input type="text" id="dropoffZip" placeholder="Zip Code">
 
-    <button onclick="calculateDistance()">Get Estimate &#8680;</button><br><br>
+    <!-- Button to Calculate Distance -->
+            <button onclick="calculateDistance()">Get Estimate &#8680;</button><br><br>
 
     <p>Distance in miles: <span id="distance"></span></p>
-    <p>Price per mile: $3.89 <span id="priceMile"></span></p>
+     <p>Price per mile: $4.89</p>
     <p>Estimate price: $<span id="estimatePrice"></span></p>
     </div>
 
