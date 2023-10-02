@@ -23,7 +23,8 @@
       class='navbar navbar-expand-lg bg-blue position-static pt-3 pb-3 border-bottom border-warning'
     >
       <div class='container-fluid'>
-        <a href='/' class='navigation navigation-center p-3'><span
+       
+        <a href='/' class='navigation navigation-center p-3  {{#if logged_in}}d-none{{/if}}'><span
             class='color-yellow'
           >MOVE</span>MATE</a>
         <a class='navbar-brand' href='#'>{{#if logged_in}}
