@@ -11,7 +11,7 @@
       crossorigin='anonymous'
     />
     {{! Map }}
-    <link rel='stylesheet' href='css/pricing.css' />
+    <link rel='stylesheet' href='/css/pricing.css' />
     {{! <link rel="stylesheet" href="/css/pricing.css"> }}
     <link rel='stylesheet' href='/css/reset.css' />
     <link rel='stylesheet' href='/css/home.css' />
@@ -24,7 +24,7 @@
     >
       <div class='container-fluid'>
        
-        <a href='/' class='navigation navigation-center p-3  {{#if logged_in}}d-none{{/if}}'><span
+        <a href='/' class="navigation navigation-center p-3{{#if logged_in}} d-none{{/if}}"><span
             class='color-yellow'
           >MOVE</span>MATE</a>
         <a class='navbar-brand' href='#'>{{#if logged_in}}
@@ -236,9 +236,10 @@
     <script
       src='https://kit.fontawesome.com/c2587f10ba.js'
       crossorigin='anonymous'
-    ></script>
+    ></script>   
     <!-- Render script for logged in users only -->
     {{#if logged_in}}
+     {{!-- Logout Script --}}
       <script src='/js/logout.js'></script>
     {{/if}}
     <script src='/js/home.js'></script>
