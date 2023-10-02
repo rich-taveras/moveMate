@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { User } = require('../models');
 const withAuth = require('../utils/auth');
 const path = require('path');
 
@@ -26,30 +26,8 @@ router.get('/', async (req, res) => {
   }
 });
 
-//http://localhost:3001/project/1
-router.get('/project/:id', async (req, res) => {
-  try {
-    const projectData = await Project.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
 
-    const project = projectData.get({ plain: true });
-
-    res.render('project', {
-      ...project,
-      logged_in: req.session.logged_in,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
-
-//http://localhost:3001/profile
+//http://localhost:3001/faq
 // Use withAuth middleware to prevent access to route
 router.get('/faq', withAuth, async (req, res) => {
   try {
