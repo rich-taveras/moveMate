@@ -147,9 +147,9 @@ By contributing to this project, you can help enhance the efficiency and effecti
 
 
   ## Contribution
-  Julio Bermudez https://github.com/JulioBermudez/Portfolio
+  Julio Bermudez https://juliobermudez.github.io/Portfolio/
 
-  Lourdes Dorvilus https://github.com/lo-mido
+  Lourdes Dorvilus https://lo-mido.github.io/SkillFolio/
 
   Richard Taveras
   https://rich-taveras.github.io/Portfolio/
