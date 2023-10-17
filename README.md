@@ -151,7 +151,8 @@ By contributing to this project, you can help enhance the efficiency and effecti
 
   Lourdes Dorvilus https://github.com/lo-mido
 
-  Richard Taveras https://github.com/rich-taveras
+  Richard Taveras
+  https://rich-taveras.github.io/Portfolio/
   ## Test
   Run the code on Vs Code. 
   ## Question
