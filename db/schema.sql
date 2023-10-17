@@ -1,4 +1,2 @@
-
-
-DROP DATABASE IF EXISTS move_mate_db;
-CREATE DATABASE move_mate_db;
+DROP DATABASE IF EXISTS movemate_db;
+CREATE DATABASE movemate_db;

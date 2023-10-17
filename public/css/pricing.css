@@ -1,0 +1,19 @@
+:root {
+    --yellow: #f6a604;
+    --blue: #0c1239;
+    --cake: #e3d9dd;
+  }
+.hide{
+    display: none;
+  }
+  .pricing{
+    background-color: var(--yellow);
+    color: var(--blue);
+  }
+  .results{
+    background-color:var(--yellow);
+    color: var(--blue);
+  }
+#result1,#result2,#result3{
+    display: none;
+}

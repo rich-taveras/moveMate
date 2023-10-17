@@ -1,0 +1,102 @@
+<section class='d-flex flex-row justify-content-evenly'>
+  <div
+    class='col-11 col-sm-11 col-md-8 col-lg-6 col-xl-7 p-5 m-5 card-shadow rounded'
+  >
+    <div>
+      <h5
+        class='text-center mb-5 spacing p-4 d-none d-sm-block pricing'
+      >PRICING</h5>
+      <h5
+        class='text-center mb-5 spacing p-4 d-block d-sm-none pricing'
+        style='font-size: 80%!important;padding:4px!important;'
+      >PRICING</h5>
+    </div>
+    <section class="d-flex flex-row justify-content-evenly mt-3 mb-3"> 
+      <div class="col-12 text-center spacing mb-4 d-none d-sm-block" style="letter-spacing: 1.5rem;opacity: 0.3;font-size:150%">
+        <span>PICKUP</span>
+      </div>
+      <div class="col-12 text-center spacing mb-4 d-block d-sm-none" style="letter-spacing: 1.5rem;opacity: 0.3;font-size:100%">
+        <span>PICKUP</span>
+      </div>
+    <div class='mb-3 col-12 col-sm-7 col-lg-7 col-xl-5'>
+      <label for='pickupAddress' class='form-label'>Address</label>
+      <input type='text' class='form-control' id='pickupAddress' />
+      
+    </div>
+    <div class='mb-3 col-12 col-sm-5 col-lg-5 col-xl-3'>
+      <label for='pickupAddress' class='form-label'>City</label>
+      <input type='text' class='form-control' id='pickupCity' />
+      
+    </div>
+    <div class='mb-3 col-7 col-sm-7 col-lg-7 col-xl-2'>
+      <label for='pickupAddress' class='form-label'>State</label>
+      <input type='text' class='form-control' id='pickupState' />
+      
+    </div>
+    <div class='mb-3 col-5 col-sm-5 col-lg-5 col-xl-2'>
+      <label for='pickupAddress' class='form-label'>Zip Code</label>
+      <input type='text' class='form-control' id='pickupZip' />
+      
+    </div>
+    </section>
+    <section class="d-flex flex-row justify-content-evenly">
+      <div class="col-12 text-center spacing mt-5 mb-4 d-none d-sm-block" style="letter-spacing: 1.5rem;opacity: 0.3;font-size:150%">
+        <span>DROPOFF</span>
+      </div>
+      <div class="col-12 text-center spacing mt-5 mb-4 d-block d-sm-none" style="letter-spacing: 1.5rem;opacity: 0.3;font-size:100%">
+        <span>DROPOFF</span>
+      </div>
+    <div class='mb-3 col-12 col-sm-7 col-xl-5'>
+      <label for='dropoffAddress' class='form-label'>Address</label>
+      <input type='text' class='form-control' id='dropoffAddress' />
+      
+    </div>
+    <div class='mb-3 col-12 col-sm-5  col-xl-3'>
+      <label for='pickupAddress' class='form-label'>City</label>
+      <input type='text' class='form-control' id='dropoffCity' />
+      
+    </div>
+    <div class='mb-3 col-7 col-sm-7 col-xl-2'>
+      <label for='pickupAddress' class='form-label'>State</label>
+      <input type='text' class='form-control' id='dropoffState' />
+      
+    </div>
+    <div class='mb-3 col-5 col-sm-5 col-xl-2'>
+      <label for='pickupAddress' class='form-label'>Zip Code</label>
+      <input type='text' class='form-control' id='dropoffZip' />
+      
+    </div>
+    </section>
+    <div class='d-flex justify-content-center mt-5'>
+      <button
+        type='submit'
+        onclick='calculateDistance()'
+        class='navigation navigation-center border-0 card-shadow bg-blue'
+      >Submit</button>
+    </div>
+    <div>
+      <div class="results mt-5 p-2 col-12 col-lg-4" id="result1">
+      <h5 class=''>Distance: <span id='distance'></span> miles</h5>
+      </div>
+      <div class="results mt-3 p-2 col-12 col-lg-4" id="result2">
+        <h5 class="">Price per mile: <span id='priceMile'>$ 4.89</span> USD</h5>
+      </div>
+       <div class="results mt-3 p-2 col-12 col-lg-4" id="result3">
+          <h5 class=''>Estimate price: $ <span id='estimatePrice'></span> USD</h5>
+       </div>
+      
+    </div>
+  </div>
+  <div
+    class='m-5 card-shadow hide rounded' style="width: 95vw; height:500px"
+    id='map'
+  ></div>
+</section>
+
+<script
+  src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD7DjcxFR_9GCsVLom_TYGMCndyt_10MZg&libraries=places'
+  async
+  defer
+></script>
+
+<script src='js/pricing.js'></script>
